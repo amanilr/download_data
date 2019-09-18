@@ -10,7 +10,7 @@ from datetime import datetime
 
 
 def get_timestamp(date_time_str):
-    dt = datetime.strptime(date_time_str, "%Y.%j.%H.%M")
+    dt = datetime.strptime(date_time_str, "%Y%m%d%H")
     return long(time.mktime(dt.timetuple()))
 
 
